@@ -125,6 +125,10 @@ class explore_work : Fragment() {
         val filter : ImageButton = view.findViewById(R.id.filters)
         val dialog : Dialog? = context?.let { Dialog(it) }
 
+
+
+//=================== THIS DIALOG BOX IS STACKED WITH THE SCREEN INSTEAD OF CLOSING - I am working on it ==========================
+
 //        filter.setOnClickListener {
 //            dialog?.setContentView(R.layout.filter)
 //            dialog?.window!!.setLayout(
@@ -147,6 +151,9 @@ class explore_work : Fragment() {
 //            dialog.show()
 //        }
 
+
+
+//==================  RECYCLER VIEW - DATA  =======================================================
 
         val peopleList : RecyclerView = view.findViewById(R.id.workList)
         val MyAdapter = Adapter_work(arr_image, arr_name, Location, Hobbies, Description)

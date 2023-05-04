@@ -8,19 +8,6 @@
     android:backgroundTint="@color/themeWhite"
     tools:context=".MainActivity">
 
-<!--    <ImageView-->
-<!--        android:id="@+id/closeNavSide"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="end"-->
-<!--        android:src="@drawable/close"-->
-<!--        android:layout_margin="2dp"-->
-<!--        android:padding="10dp"-->
-<!--        android:background="#C1FFFFFF"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        android:layout_marginStart="330dp"-->
-<!--        app:tint="@color/themeLightBlue"/>-->
 
     <LinearLayout
         android:id="@+id/view"
@@ -97,6 +84,20 @@
             app:headerLayout="@layout/side_nav_header"/>
 
     </androidx.drawerlayout.widget.DrawerLayout>
+
+    <ImageView
+        android:id="@+id/closeNavSide"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="2dp"
+        android:background="#C1FFFFFF"
+        android:padding="10dp"
+        android:src="@drawable/close"
+        app:layout_constraintStart_toEndOf="@+id/Drawer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/themeLightBlue" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"

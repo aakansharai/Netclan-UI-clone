@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:text="Suhani"
-                android:textSize="18dp"/>
+                android:textSize="18sp"/>
             <TextView
                 android:id="@+id/peopleCardLocation"
                 android:layout_width="wrap_content"
@@ -129,7 +129,7 @@
                 android:layout_marginTop="10dp"
                 android:textStyle="bold"
                 android:text="Help Home | 10 years of experience"
-                android:textSize="11sp"/>
+                android:textSize="13sp"/>
 
             <TextView
                 android:id="@+id/peopleCardDescription"

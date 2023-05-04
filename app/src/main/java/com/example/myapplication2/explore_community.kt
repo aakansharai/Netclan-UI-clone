@@ -108,32 +108,35 @@ class explore_community : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_explore_community, container, false)
 
-        val filter : ImageButton = view.findViewById(R.id.filters)
-        val dialog : Dialog? = context?.let { Dialog(it) }
 
-        filter.setOnClickListener {
-            dialog?.setContentView(R.layout.filter)
-            dialog?.window!!.setLayout(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.MATCH_PARENT
-            )
-            dialog.setCancelable(false)
-            dialog.window!!.attributes.windowAnimations = R.style.animation
+//=================== THIS DIALOG BOX IS STACKED WITH THE SCREEN INSTEAD OF CLOSING - I am working on it ==========================
 
-            val clear = dialog.findViewById<TextView>(R.id.clear)
-            val close = dialog.findViewById<ImageView>(R.id.filterCancelImage)
-
-            clear.setOnClickListener(View.OnClickListener {
-                dialog.dismiss()
-                Toast.makeText(context, "Filter cleared", Toast.LENGTH_SHORT).show()
-            })
-            close.setOnClickListener (View.OnClickListener {
-                dialog.dismiss()
-                Toast.makeText(context, "Filter close", Toast.LENGTH_SHORT).show()
-            })
-
-            dialog.show()
-        }
+//        val filter : ImageButton = view.findViewById(R.id.filters)
+//        val dialog : Dialog? = context?.let { Dialog(it) }
+//
+//        filter.setOnClickListener {
+//            dialog?.setContentView(R.layout.filter)
+//            dialog?.window!!.setLayout(
+//                ViewGroup.LayoutParams.MATCH_PARENT,
+//                ViewGroup.LayoutParams.MATCH_PARENT
+//            )
+//            dialog.setCancelable(false)
+//            dialog.window!!.attributes.windowAnimations = R.style.animation
+//
+//            val clear = dialog.findViewById<TextView>(R.id.clear)
+//            val close = dialog.findViewById<ImageView>(R.id.filterCancelImage)
+//
+//            clear.setOnClickListener(View.OnClickListener {
+//                dialog.dismiss()
+//                Toast.makeText(context, "Filter cleared", Toast.LENGTH_SHORT).show()
+//            })
+//            close.setOnClickListener (View.OnClickListener {
+//                dialog.dismiss()
+//                Toast.makeText(context, "Filter close", Toast.LENGTH_SHORT).show()
+//            })
+//
+//            dialog.show()
+//        }
 
 
 //==================  RECYCLER VIEW - DATA  =======================================================

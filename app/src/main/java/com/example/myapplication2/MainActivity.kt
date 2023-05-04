@@ -26,17 +26,18 @@ class MainActivity : AppCompatActivity() {
 
 //        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         val button : ImageView = findViewById(R.id.ToggleBtn)
+        val closeBtn : ImageView = findViewById(R.id.closeNavSide)
         drawerLayout = findViewById(R.id.Drawer)
-
-        val closebtn = drawerLayout.findViewById<ImageView>(R.id.closeNavSide)
 
         button.setOnClickListener {
             drawerLayout.visibility = View.VISIBLE
+            closeBtn.visibility = View.VISIBLE
         }
-        closebtn.setOnClickListener {
+        closeBtn.setOnClickListener {
             drawerLayout.visibility = View.GONE
+            closeBtn.visibility = View.GONE
         }
-////
+
 //        button.setOnClickListener{
 //            if(drawerLayout.visibility== View.VISIBLE){
 //                button.setImageResource(R.drawable.menu_open)
