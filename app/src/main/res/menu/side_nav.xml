@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="Edit Profile" android:id="@+id/editProfile" android:icon="@drawable/edit_person"/>
+                <item android:title="My Network" android:id="@+id/network" android:icon="@drawable/edit_person"/>
+                <item android:title="Switch to Professional" android:id="@+id/stp" android:icon="@drawable/edit_person"/>
+                <item android:title="Switch to Merchant" android:id="@+id/stm" android:icon="@drawable/edit_person"/>
+                <item android:title="Dating" android:id="@+id/dating" android:icon="@drawable/edit_person"/>
+                <item android:title="Matrimony" android:id="@+id/matrimony" android:icon="@drawable/edit_person"/>
+                <item android:title="But-Sell-Rent" android:id="@+id/bsr" android:icon="@drawable/edit_person"/>
+                <item android:title="Jobs" android:id="@+id/jobs" android:icon="@drawable/edit_person"/>
+                <item android:title="Business Cards" android:id="@+id/bc" android:icon="@drawable/edit_person"/>
+                <item android:title="Hashtags" android:id="@+id/hashtag" android:icon="@drawable/edit_person"/>
+                <item android:title="Notes" android:id="@+id/notes" android:icon="@drawable/edit_person"/>
+                <item android:title="Live Location" android:id="@+id/ll" android:icon="@drawable/edit_person"/>
+            </group>
+        </menu>
+    </item>
+</menu>

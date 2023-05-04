@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:theme="@style/Theme.MyApplication2"
+    android:layout_marginTop="20dp"
+    tools:context=".Refine">
+
+    <TextView
+        android:id="@+id/lable1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/themeBlue"
+        android:text="@string/select_your_availability"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:entries="@array/availability"
+        android:autofillHints="Available | Hey Let Us Connect"
+        android:background="@drawable/spinner_refine"
+        app:layout_constraintTop_toBottomOf="@+id/lable1"
+        tools:layout_editor_absoluteX="20dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/lable2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_your_status"
+        android:textStyle="bold"
+        android:textColor="@color/themeBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/status"
+        android:autofillHints="@string/status"
+        android:background="@drawable/spinner_refine"
+        android:maxEms="250"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/lable2"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/lable3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hyperlocal"
+        android:textStyle="bold"
+        android:textColor="@color/themeBlue"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:trackThickness="3dp"
+        android:keepScreenOn="true"
+        android:soundEffectsEnabled="true"
+        app:layout_constraintTop_toBottomOf="@+id/lable3"
+        app:flow_horizontalGap="@dimen/cardview_default_elevation"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1km"
+        android:textColor="@color/themeBlue"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_100km"
+        android:textColor="@color/themeBlue"
+        android:layout_marginRight="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar" />
+
+
+    <TextView
+        android:id="@+id/lable4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/purpose"
+        android:textColor="@color/themeBlue"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/purpose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:theme="@style/NavigationBar"
+        android:layout_marginTop="10dp"
+        style="@style/Buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lable4">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:text="Coffee"
+            android:background="@drawable/purpose_btn"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/purpose_btn"
+            android:text="Business"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/btn1"
+            app:layout_constraintEnd_toStartOf="@+id/btn3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/purpose_btn"
+            android:text="Hobbies"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/btn2"
+            app:layout_constraintEnd_toStartOf="@+id/btn4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/purpose_btn"
+            android:text="Friendship"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/purpose_btn"
+            android:text="Movies"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn1"
+            app:layout_constraintEnd_toStartOf="@+id/btn6" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/purpose_btn"
+            android:text="Dinning"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/btn5"
+            app:layout_constraintEnd_toEndOf="@+id/btn7"
+            app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/purpose_btn"
+            android:text="Dating"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/btn6"
+            app:layout_constraintEnd_toStartOf="@+id/btn8"
+            app:layout_constraintTop_toBottomOf="@+id/btn3" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/purpose_btn"
+            android:text="Matrimony"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn7"
+            app:layout_constraintTop_toBottomOf="@+id/btn4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Save &amp; Exit"
+        android:backgroundTint="@color/themeLightBlue"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purpose" />
+</androidx.constraintlayout.widget.ConstraintLayout>

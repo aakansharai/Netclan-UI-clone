@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp"
+    android:paddingVertical="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/peopleListImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="12dp"
+        android:src="@drawable/people"
+        android:scaleType="centerCrop"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:contentDescription="Image" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:paddingVertical="10dp"
+        android:layout_marginStart="-34dp"
+        android:layout_marginEnd="15dp"
+        app:cardCornerRadius="15dp"
+        android:id="@+id/card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginVertical="20dp"
+            android:id="@+id/cardLinearPeople">
+
+            <TextView
+                android:id="@+id/peopleCardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Aakansha rai"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/peopleCardLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:text="Sangam vihar, New Delhi"/>
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:max="5"
+                android:layout_marginStart="25dp"
+                android:backgroundTint="@color/themeLightBlue"
+                app:trackThickness="3dp"/>
+
+            <TextView
+                android:id="@+id/peopleCardStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Hi community! I am open to work if there is any chance. I am glad to connect."
+                android:textSize="11sp"/>
+
+            <TextView
+                android:id="@+id/peopleCardDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Hi community! I am open to work if there is any chance. I am a Android developer with lots of skills like Kotlin, REST API, Firebase, still I am jobless and my friends got a job."
+                android:textSize="11sp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

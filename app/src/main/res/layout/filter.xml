@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/themeLightBlue"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/filterCancelImage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/close"
+            app:tint="@color/white" />
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Filter"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="CLEAR"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/scrollView2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="800dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/scroll_main_container">-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1professional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginVertical="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/professional_university_company"
+                        android:textColor="@color/themeLightBlue"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Profession"
+                        android:textColor="@color/themeLightBlue" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/filter_content"
+                        android:hint="Enter profession to filter"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="8dp"
+                        android:textColorHint="@color/themeLightBlue_light" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="University Name"
+                        android:textColor="@color/themeLightBlue" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/filter_content"
+                        android:hint="Enter university name to filter"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="8dp"
+                        android:textColorHint="@color/themeLightBlue_light" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2Location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:elevation="6dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card1professional">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="25dp"
+                        android:layout_marginVertical="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Location"
+                            android:textColor="@color/themeLightBlue"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="HomeTown"
+                            android:textColor="@color/themeLightBlue" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/filter_content"
+                            android:hint="Enter city to filter"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="8dp"
+                            android:textColorHint="@color/themeLightBlue_light" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Lives In"
+                            android:textColor="@color/themeLightBlue" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/filter_content"
+                            android:hint="Enter city to filter"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="8dp"
+                            android:textColorHint="@color/themeLightBlue_light" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:id="@+id/card3Preference"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:elevation="6dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/card2Location">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginHorizontal="25dp"-->
+<!--                        android:layout_marginVertical="20dp"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Preference"-->
+<!--                            android:textColor="@color/themeLightBlue"-->
+<!--                            android:textSize="16dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:text="Hobbies"-->
+<!--                            android:textColor="@color/themeLightBlue" />-->
+
+<!--                        <EditText-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:background="@drawable/filter_content"-->
+<!--                            android:hint="Enter hobbies to filter"-->
+<!--                            android:paddingHorizontal="15dp"-->
+<!--                            android:paddingVertical="8dp"-->
+<!--                            android:textColorHint="@color/themeLightBlue_light" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:text="Movies"-->
+<!--                            android:textColor="@color/themeLightBlue" />-->
+
+<!--                        <EditText-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:background="@drawable/filter_content"-->
+<!--                            android:hint="Enter Movies to filter"-->
+<!--                            android:paddingHorizontal="15dp"-->
+<!--                            android:paddingVertical="8dp"-->
+<!--                            android:textColorHint="@color/themeLightBlue_light" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:text="Food"-->
+<!--                            android:textColor="@color/themeLightBlue" />-->
+
+<!--                        <EditText-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:background="@drawable/filter_content"-->
+<!--                            android:hint="Enter cuisine to filter"-->
+<!--                            android:paddingHorizontal="15dp"-->
+<!--                            android:paddingVertical="8dp"-->
+<!--                            android:textColorHint="@color/themeLightBlue_light" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:text="Food"-->
+<!--                            android:textColor="@color/themeLightBlue" />-->
+
+<!--                        <EditText-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:background="@drawable/filter_content"-->
+<!--                            android:hint="Enter cuisine to filter"-->
+<!--                            android:paddingHorizontal="15dp"-->
+<!--                            android:paddingVertical="8dp"-->
+<!--                            android:textColorHint="@color/themeLightBlue_light" />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:text="Food"-->
+<!--                            android:textColor="@color/themeLightBlue" />-->
+
+<!--                        <EditText-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:background="@drawable/filter_content"-->
+<!--                            android:hint="Enter cuisine to filter"-->
+<!--                            android:paddingHorizontal="15dp"-->
+<!--                            android:paddingVertical="8dp"-->
+<!--                            android:textColorHint="@color/themeLightBlue_light" />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:text="Food"-->
+<!--                            android:textColor="@color/themeLightBlue" />-->
+
+<!--                        <EditText-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:background="@drawable/filter_content"-->
+<!--                            android:hint="Enter cuisine to filter"-->
+<!--                            android:paddingHorizontal="15dp"-->
+<!--                            android:paddingVertical="8dp"-->
+<!--                            android:textColorHint="@color/themeLightBlue_light" />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:text="Food"-->
+<!--                            android:textColor="@color/themeLightBlue" />-->
+
+<!--                        <EditText-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:background="@drawable/filter_content"-->
+<!--                            android:hint="Enter cuisine to filter"-->
+<!--                            android:paddingHorizontal="15dp"-->
+<!--                            android:paddingVertical="8dp"-->
+<!--                            android:textColorHint="@color/themeLightBlue_light" />-->
+<!--                    </LinearLayout>-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </ScrollView>-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/filter_apply"
+        android:paddingVertical="13dp"
+        android:text="Apply"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

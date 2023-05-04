@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">My Application2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open\n</string>
+    <string name="close">Close\n</string>
+    <string name="navigationbar">NavigationBar</string>
+    <string name="select_your_availability">Select your Availability</string>
+    <string name="status">Hi community! I am open to new connection!!</string>
+    <string name="add_your_status">Add Your Status</string>
+    <string name="hyperlocal">Select Hyper local Distance</string>
+    <string name="purpose">Select Purpose</string>
+    <string name="_1km">1Km</string>
+    <string name="_100km">100Km</string>
+    <string name="search">Search</string>
+    <string name="professional_university_company">Professional/University/Company</string>
+
+    <string-array name="availability">
+        <item>Available | Hey Let Us Connect</item>
+        <item>Away | Stay Discreet And Watch</item>
+        <item>Busy | Do Not Disturb | Will Catch You Later</item>
+        <item>SOS | Emergency! Need Assistance! Help</item>
+    </string-array>
+
+</resources>

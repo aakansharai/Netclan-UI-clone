@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/themeWhite"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/bigContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/themeBlue">
+
+        <ImageView
+            android:id="@+id/ToggleBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/hamburger"
+            android:layout_gravity="center_vertical"
+            app:tint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:text="Howdy Aakansha rai !!"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:text="Sangam Vihar, New Delhi-110062"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/bigContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/Drawer"
+        android:visibility="gone"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/navigationbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/navigationSide"
+            app:menu="@menu/side_nav"
+            app:headerLayout="@layout/side_nav_header"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        style="@style/NavigationBar"
+        android:background="@color/white"
+        app:itemIconTint="@color/themeLightBlue"
+        app:itemTextColor="@color/themeLightBlue"
+        app:itemRippleColor="@color/themeBlue"
+        app:itemActiveIndicatorStyle="@color/themeWhite"
+        app:itemTextAppearanceActive="@color/themeBlue"
+        android:theme="@style/NavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:menu="@menu/bottom_nav"
+        app:layout_constraintBottom_toBottomOf="@+id/bigContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
