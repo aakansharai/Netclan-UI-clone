@@ -28,14 +28,13 @@ class MainActivity : AppCompatActivity() {
         val button : ImageView = findViewById(R.id.ToggleBtn)
         drawerLayout = findViewById(R.id.Drawer)
 
-        button.setOnClickListener {
-            if(drawerLayout.visibility == View.VISIBLE){
+        val closebtn = drawerLayout.findViewById<ImageView>(R.id.closeNavSide)
 
-                drawerLayout.visibility = View.GONE
-            }
-            else{
-                drawerLayout.visibility = View.VISIBLE
-            }
+        button.setOnClickListener {
+            drawerLayout.visibility = View.VISIBLE
+        }
+        closebtn.setOnClickListener {
+            drawerLayout.visibility = View.GONE
         }
 ////
 //        button.setOnClickListener{

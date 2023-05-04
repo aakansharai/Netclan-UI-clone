@@ -8,6 +8,20 @@
     android:backgroundTint="@color/themeWhite"
     tools:context=".MainActivity">
 
+<!--    <ImageView-->
+<!--        android:id="@+id/closeNavSide"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="end"-->
+<!--        android:src="@drawable/close"-->
+<!--        android:layout_margin="2dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:background="#C1FFFFFF"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_marginStart="330dp"-->
+<!--        app:tint="@color/themeLightBlue"/>-->
+
     <LinearLayout
         android:id="@+id/view"
         android:layout_width="match_parent"
@@ -16,6 +30,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bigContainer"
         app:layout_constraintStart_toStartOf="parent"
         android:background="@color/themeBlue">
+
 
         <ImageView
             android:id="@+id/ToggleBtn"
