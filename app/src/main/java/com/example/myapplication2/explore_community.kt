@@ -2,6 +2,7 @@ package com.example.myapplication2
 
 import android.annotation.SuppressLint
 import android.app.Dialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -113,7 +114,6 @@ class explore_community : Fragment() {
 
 //        val filter : ImageButton = view.findViewById(R.id.filters)
 //        val dialog : Dialog? = context?.let { Dialog(it) }
-//
 //        filter.setOnClickListener {
 //            dialog?.setContentView(R.layout.filter)
 //            dialog?.window!!.setLayout(

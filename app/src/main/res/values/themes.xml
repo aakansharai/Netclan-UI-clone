@@ -37,4 +37,11 @@
         <item name="android:windowExitAnimation">@android:anim/overshoot_interpolator</item>
     </style>
 
+    <style name="dialogBox" parent="Theme.Material3.DayNight.Dialog.Alert">
+        <item name="android:textSize">13sp</item>
+        <item name="minWidth">0dp</item>
+        <item name="textFillColor">@color/themeBlue</item>
+        <item name="minHeight">0dp</item>
+    </style>
+
 </resources>
