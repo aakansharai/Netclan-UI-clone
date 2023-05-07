@@ -112,7 +112,11 @@ class explore_community : Fragment() {
 
 //=================== THIS DIALOG BOX IS STACKED WITH THE SCREEN INSTEAD OF CLOSING - I am working on it ==========================
 
-//        val filter : ImageButton = view.findViewById(R.id.filters)
+        val filter : ImageButton = view.findViewById(R.id.filters)
+        filter.setOnClickListener {
+            val intent = Intent(activity, ExploreFilter::class.java)
+            startActivity(intent)
+        }
 //        val dialog : Dialog? = context?.let { Dialog(it) }
 //        filter.setOnClickListener {
 //            dialog?.setContentView(R.layout.filter)
